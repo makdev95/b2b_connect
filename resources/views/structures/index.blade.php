@@ -59,7 +59,7 @@ Theta - Order List
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    
                                     <th>Forme</th>
                                     <th>Raison_social</th>
                                     <th>Objet_social</th>
@@ -72,7 +72,7 @@ Theta - Order List
                             <tbody>
                                 @foreach( App\Models\structure::all() as $structure)
                                 <tr>
-                                    <th scope="row">#{{ $structure->id }}</th>
+                                    
                                     <td>{{ $structure->form_jurid }}</td>
                                     <td>{{ $structure->raison_social }}</td>
                                     <td>{{ $structure->objet_social }}</td>
@@ -82,8 +82,7 @@ Theta - Order List
                                     <td>
                                         <div class="button-list">
                                             <a href="{{ route("users.show",$structure->personne()->first()->id) }}"class="btn btn-primary-rgba"><i class="feather icon-file"></i></a>
-                                            <a href="{{url('/page-order-detail')}}" class="btn btn-success-rgba"><i class="feather icon-edit-2"></i></a>
-                                            <a href="{{url('/page-order-detail')}}" class="btn btn-danger-rgba"><i class="feather icon-trash"></i></a>
+                                            
                                         </div>
                                     </td>
                                 </tr>

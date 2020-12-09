@@ -4,7 +4,7 @@
                 <div class="card-header">
                     <div class="row align-items-center">
                         <div class="col-9">
-                            <h5 class="card-title mb-0">Publicités</h5>
+                            <h5 class="card-title mb-0">Opportunités d'affaire</h5>
                         </div>
                         <div class="col-3">
                             <ul class="list-inline-group text-right mb-0 pl-0">
@@ -19,8 +19,8 @@
                             <img v-if="pub.image" style="height: 200px; width: 100%" :src="pub.image" alt="">
                             <video controls autoplay name="media" style="height: 200px; width: 100%" v-else :src="pub.video" type="video/mp4"></video>
                         </slide>
-                        <button class="next" @click="next">Next</button>
-                        <button class="prev" @click="prev">Prev</button>   
+                        <!-- <button class="next" @click="next">Next</button>-->
+                        <!--<button class="prev" @click="prev">Prev</button>-->   
                     </div>
                 </div>
             </div>

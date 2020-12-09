@@ -114,7 +114,7 @@ export default {
         },
         postMessage() {
 
-            const url = 'http://b2b.test/chats'
+            const url = '127.0.0.1:8000/chats'
             const data = {
                 content_mess: this.content_message,
                 meeting_id: this.meeting_id
